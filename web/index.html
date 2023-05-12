@@ -1,0 +1,114 @@
+<html lang="fi">
+	<head>
+		<script
+			src="https://kit.fontawesome.com/4ba30afed9.js"
+			crossorigin="anonymous"></script>
+
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Esko</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+
+		<link rel="stylesheet" href="./style.css" />
+
+		<script type="text/javascript" src="llqrcode.js"></script>
+		<script type="text/javascript" src="webqr.js"></script>
+	</head>
+	<body>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+		<script src="./jquery.ui.touch-punch.min.js"></script>
+		<div id="result"></div>
+		<div class="personal-info border">
+			<h2 class="infotext">Ladataan...</h2>
+			<div>
+				<hr class="new4" />
+				<div class="IconPlacement">
+					<div class="icons">
+						<div class="iconTop">
+							<i
+								class="iconPadding fa-sharp fa-solid fa-heart fa-xl"></i>
+						</div>
+						<div class="icontext text">
+							<span id="bloodPressure">...</span>
+						</div>
+					</div>
+					<div class="icons">
+						<div class="iconTop">
+							<i
+								class="iconPadding fa-sharp fa-solid fa-weight-scale fa-xl"></i>
+						</div>
+						<div class="icontext text">
+							<span id="weight">...</span>
+						</div>
+					</div>
+					<div class="icons">
+						<div class="iconTop">
+							<i class="iconPadding fa-solid fa-o fa-xl"></i>
+						</div>
+						<div class="icontext text">
+							<span id="oxygen">...</span>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="button-container container border paneeli">
+			<button class="button text" onclick="BPButton()">
+				BP
+				<div class="icon">
+					<i class="fa-sharp fa-solid fa-heart fa-xl"></i>
+				</div>
+			</button>
+
+			<button class="button text" onclick="WeightButton()">
+				Weight
+				<div class="icon">
+					<i class="fa-sharp fa-solid fa-weight-scale fa-xl"></i>
+				</div>
+			</button>
+
+			<button class="button text" onclick="OxygenButton()">
+				Oxygen
+				<div class="icon">
+					<i class="fa-solid fa-o fa-xl"></i>
+				</div>
+			</button>
+
+			<button class="button text" onclick="CameraButton()">
+				Camera
+				<div class="icon">
+					<i class="fa-sharp fa-solid fa-camera fa-xl"></i>
+				</div>
+			</button>
+		</div>
+
+		<div class="graph">
+			<img id="chart" src="https://via.placeholder.com/300" />
+			<div id="camera">
+				<div id="mainbody"></div>
+				<div id="outdiv"></div>
+				<div id="qrimg"></div>
+				<div id="webcamimg"></div>
+				<button id="camera--trigger">Ota kuva</button>
+			</div>
+		</div>
+
+		<canvas id="qr-canvas" width="800" height="600"></canvas>
+		<script type="text/javascript">
+			load();
+		</script>
+		<script src="./chart.js"></script>
+		<!--<script src="./camera.js"></script>-->
+	</body>
+</html>

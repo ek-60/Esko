@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <style>
+      /*html,
+      body {
+        background-color: #000 !important;
+        background: #000 !important;
+      }
+
+      h1 {
+        color: white !important;
+      }
+      .ui-widget-content {
+        background-color: #000 !important;
+        background-image: none !important;
+        border: none !important;
+      }*/
+      #draggable {
+        width: 300px;
+        height: 300px;
+      }
+      #draggable2 {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./jquery.ui.touch-punch.min.js"></script>
+    <script>
+      $(function () {
+        $("#draggable").draggable();
+      });
+
+      $(function () {
+        $("#draggable2").draggable();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="jstest">
+      <h1>Tämä teksti katoaa 5s kuluttua</h1>
+    </div>
+
+    <div id="draggable" class="ui-widget-content">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div id="draggable2" class="ui-widget-content">
+      <canvas id="myChart2"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById("jstest").style.visibility = "hidden";
+      }, 5000);
+
+      /*const ctx = document.getElementById("myChart");
+      const ctx2 = document.getElementById("myChart2");*/
+
+      function random(max, add) {
+        let res = [];
+        for (let i = 0; i < 12; i++) {
+          res.push(Math.floor(Math.random() * max) + add);
+        }
+        return res;
+      }
+
+      var xValues = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ];
+
+      const config = {
+        type: "line",
+        data: {
+          labels: xValues,
+          datasets: [
+            {
+              data: random(9, 130),
+              borderColor: "red",
+              backgroundColor: "#333",
+              label: "Yläpaine",
+              fill: false,
+            },
+            {
+              data: random(5, 85),
+              borderColor: "blue",
+              backgroundColor: "#333",
+              //pointBackgroundColor: "blue",
+              label: "Alapaine",
+              color: "white",
+              fill: false,
+            },
+          ],
+        },
+        options: {
+          plugins: {
+            legend: {
+              labels: { color: "white" },
+            },
+          },
+
+          maintainAspectRatio: false,
+          responsive: true,
+          scales: {
+            y: {
+              grid: {
+                color: "white",
+              },
+              ticks: {
+                color: "white",
+              },
+            },
+            x: {
+              grid: {
+                color: "white",
+              },
+              ticks: {
+                color: "white",
+              },
+            },
+          },
+        },
+      };
+      new Chart("myChart", config);
+      new Chart("myChart2", config);
+    </script>
+  </body>
+</html>

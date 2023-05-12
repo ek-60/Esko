@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"age": "70",
+		"name": "Esko Matti"
+	},
+	{
+		"id": 2,
+		"age": "23",
+		"name": "Matti Meikäläinen"
+	},
+	{
+		"id": 3,
+		"age": "63",
+		"name": "Petri Nygård"
+	},
+	{
+		"id": 4,
+		"age": "22",
+		"name": "Servu"
+	}
+]

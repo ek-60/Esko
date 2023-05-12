@@ -1,0 +1,77 @@
+<head>
+  <style>
+    body {
+      background-color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 50%">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    const ctx = document.getElementById("myChart");
+
+    function random(max, add) {
+      let res = [];
+      for (let i = 0; i < 12; i++) {
+        res.push(Math.floor(Math.random() * max) + add);
+      }
+      return res;
+    }
+
+    var xValues = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    new Chart("myChart", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [
+          {
+            data: random(9, 130),
+            borderColor: "red",
+            label: "Yläpaine",
+            fill: false,
+          },
+          {
+            data: random(5, 85),
+            borderColor: "blue",
+            label: "Alapaine",
+            fill: true,
+          },
+        ],
+      },
+      options: {
+        legend: { display: false },
+        scales: {
+          y: {
+            grid: {
+              color: "white",
+            },
+          },
+          x: {
+            grid: {
+              color: "white",
+            },
+          },
+        },
+      },
+    });
+  </script>
+</body>

@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 1px dashed #153b84;
+    height: 50%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.personal-info {
+    background-color: #153b84;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 419px;
+    height: 112px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top:5px;
+}
+.IconPlacement {
+    margin-left: 30px;
+}
+
+.infotext {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    justify-content:center;
+    display:flex;
+}
+hr.new4 {
+    border: 1px solid white;
+    margin-bottom:20px;
+    position: relative;
+
+}
+
+.personal-info p {
+    margin: 0;
+}
+
+.button-container {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: #153b84;
+    float: right;
+    border-radius: 0px;
+    width: 80px;
+    height: 418px;
+    border-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    background-color: #153b84;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button:hover {
+    background-color: #0069d9;
+}
+
+.graph {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.iconPadding {
+    padding-right: 20px;
+}
+
+.icons {
+    display: inline-block;
+    padding-left: 55px;
+}
+.icon {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.iconTop {
+    text-align: center;
+    padding-bottom: 15px;
+
+}
+
+.border {
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+}
+
+.paneeli{
+    margin-right: 5px;
+    align-items: center;
+    border-radius:10px;
+}
+#camera, #camera--view, #camera--sensor, #camera--output {
+    position: fixed;
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output {
+    transform: scaleX(-1);
+   
+}
+#camera--trigger {
+    width: 200px;
+    background-color: #153b84;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}
+
+.taken {
+    height: 100px !important;
+    width: 100px !important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 5px;
+    right: 15px;
+    z-index: 2;
+}
+#result{
+    display:none;
+}

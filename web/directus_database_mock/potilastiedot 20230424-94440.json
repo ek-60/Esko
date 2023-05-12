@@ -1,0 +1,303 @@
+[
+	{
+		"pid": 1,
+		"arvo": "50",
+		"timestamp": "2023-02-20T11:51:00.000Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 2,
+		"arvo": "120/50",
+		"timestamp": "2023-02-20T11:51:00.000Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 3,
+		"arvo": "89",
+		"timestamp": "2023-02-20T11:51:49.000Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 10,
+		"arvo": "140/50",
+		"timestamp": "2023-02-21T11:30:32.371Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 14,
+		"arvo": "120/90",
+		"timestamp": "2023-02-21T12:17:12.798Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 15,
+		"arvo": "45",
+		"timestamp": "2023-02-21T12:17:12.808Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 16,
+		"arvo": "92",
+		"timestamp": "2023-02-21T12:17:12.852Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 17,
+		"arvo": "75",
+		"timestamp": "2023-02-22T09:17:39.163Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 18,
+		"arvo": "40",
+		"timestamp": "2023-02-22T09:17:46.105Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 19,
+		"arvo": "80",
+		"timestamp": "2023-02-22T09:17:52.237Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 20,
+		"arvo": "100",
+		"timestamp": "2023-02-22T09:18:02.571Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 21,
+		"arvo": "79",
+		"timestamp": "2023-02-22T09:18:13.446Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 22,
+		"arvo": "82",
+		"timestamp": "2023-02-22T09:18:20.070Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 23,
+		"arvo": "120",
+		"timestamp": "2023-02-22T09:20:19.988Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 24,
+		"arvo": "55",
+		"timestamp": "2023-03-14T07:50:05.633Z",
+		"tyyppi": "oxygen",
+		"user_id": "4"
+	},
+	{
+		"pid": 25,
+		"arvo": "150/60",
+		"timestamp": "2023-03-14T07:50:05.777Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "4"
+	},
+	{
+		"pid": 26,
+		"arvo": "70",
+		"timestamp": "2023-03-14T07:50:05.784Z",
+		"tyyppi": "weight",
+		"user_id": "4"
+	},
+	{
+		"pid": 27,
+		"arvo": "98",
+		"timestamp": "2023-03-14T11:55:00.521Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 28,
+		"arvo": "150/40",
+		"timestamp": "2023-03-14T11:55:00.549Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 29,
+		"arvo": "75%",
+		"timestamp": "2023-03-14T11:55:00.607Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 30,
+		"arvo": "120/50",
+		"timestamp": "2023-03-14T13:09:32.809Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 31,
+		"arvo": "87%",
+		"timestamp": "2023-03-14T13:09:32.904Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 32,
+		"arvo": "99",
+		"timestamp": "2023-03-14T13:09:32.985Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 36,
+		"arvo": "87",
+		"timestamp": "2023-03-20T09:38:27.468Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 37,
+		"arvo": "113/95",
+		"timestamp": "2023-03-20T09:38:27.474Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 38,
+		"arvo": "93%",
+		"timestamp": "2023-03-20T09:38:27.512Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 45,
+		"arvo": "110/100",
+		"timestamp": "2023-03-20T09:48:08.559Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 46,
+		"arvo": "120",
+		"timestamp": "2023-03-20T09:48:08.565Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 47,
+		"arvo": "99%",
+		"timestamp": "2023-03-20T09:48:08.570Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 52,
+		"arvo": "48%",
+		"timestamp": "2023-03-21T10:26:14.257Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 53,
+		"arvo": "99",
+		"timestamp": "2023-03-21T10:26:14.270Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 54,
+		"arvo": "99%",
+		"timestamp": "2023-03-21T10:33:08.557Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 55,
+		"arvo": "120/80",
+		"timestamp": "2023-03-21T10:33:08.650Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 56,
+		"arvo": "77",
+		"timestamp": "2023-03-21T10:33:08.665Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 57,
+		"arvo": "120",
+		"timestamp": "2023-03-21T10:46:52.600Z",
+		"tyyppi": "weight",
+		"user_id": "2"
+	},
+	{
+		"pid": 58,
+		"arvo": "37",
+		"timestamp": "2023-03-21T10:46:52.613Z",
+		"tyyppi": "oxygen",
+		"user_id": "2"
+	},
+	{
+		"pid": 59,
+		"arvo": "110/95",
+		"timestamp": "2023-03-21T10:46:52.692Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "2"
+	},
+	{
+		"pid": 60,
+		"arvo": "120/90",
+		"timestamp": "2023-03-21T11:14:27.106Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	},
+	{
+		"pid": 61,
+		"arvo": "76%",
+		"timestamp": "2023-03-21T11:14:27.119Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 62,
+		"arvo": "98",
+		"timestamp": "2023-03-21T11:14:27.140Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 63,
+		"arvo": "73",
+		"timestamp": "2023-03-21T11:42:46.879Z",
+		"tyyppi": "weight",
+		"user_id": "1"
+	},
+	{
+		"pid": 64,
+		"arvo": "27%",
+		"timestamp": "2023-03-21T11:42:46.884Z",
+		"tyyppi": "oxygen",
+		"user_id": "1"
+	},
+	{
+		"pid": 65,
+		"arvo": "120/95",
+		"timestamp": "2023-03-21T11:42:46.968Z",
+		"tyyppi": "bloodPressure",
+		"user_id": "1"
+	}
+]
