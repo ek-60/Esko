@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:visibility="gone"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dataReadFragment"
+            android:title="Data read fragment" />
+
+        <item
+            android:id="@+id/apiFragment"
+            android:title="Api fragment" />
+
+        <item
+            android:id="@+id/apiUserFragment"
+            android:title="Todo" />
+
+        <item
+            android:id="@+id/mapsFragment"
+            android:title="Google Maps" />
+
+        <item
+            android:id="@+id/feedbackReadFragment"
+            android:title="Get/Post data from my own API" />
+
+        <item
+            android:id="@+id/fragmentUser"
+            android:title="Users" />
+
+    </group>
+</menu>

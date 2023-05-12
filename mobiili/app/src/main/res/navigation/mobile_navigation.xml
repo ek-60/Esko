@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/apiUserFragment">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.androidapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.androidapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/apiUserFragment"
+        android:name="com.example.androidapp.ui.startPage.ApiUserFragment"
+        android:label="fragment_api_user"
+        tools:layout="@layout/fragment_api_user">
+        <action
+            android:id="@+id/action_apiUserFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userInfoFragment"
+        android:name="com.example.androidapp.ui.userPage.UserInfoFragment"
+        android:label="fragment_user_info"
+        tools:layout="@layout/fragment_user_info" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_listeningFragment"
+            app:destination="@id/listeningFragment" />
+        <action
+            android:id="@+id/action_userInfoFragment_to_apiUserFragment"
+            app:destination="@id/apiUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listeningFragment"
+        android:name="com.example.androidapp.ui.listeningPage.ListeningFragment"
+        android:label="fragment_listening"
+        tools:layout="@layout/fragment_listening" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_listeningFragment_to_userInfoFragment"
+            app:destination="@id/userInfoFragment" />
+        <action
+            android:id="@+id/action_listeningFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+        <action
+            android:id="@+id/action_listeningFragment_to_apiUserFragment"
+            app:destination="@id/apiUserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentFragment"
+        android:name="com.example.androidapp.ui.appointmentPage.AppointmentFragment"
+        android:label="fragment_appointment"
+        tools:layout="@layout/fragment_appointment" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <action
+            android:id="@+id/action_appointmentFragment_to_listeningFragment"
+            app:destination="@id/listeningFragment" />
+        <action
+            android:id="@+id/action_appointmentFragment_to_checkAppointmentFragment"
+            app:destination="@id/checkAppointmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/checkAppointmentFragment"
+        android:name="com.example.androidapp.ui.checkAppointment.CheckAppointmentFragment"
+        android:label="fragment_check_appointment"
+        tools:layout="@layout/fragment_check_appointment" >
+        <argument
+            android:name="time"
+            app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_checkAppointmentFragment_to_appointmentFragment"
+            app:destination="@id/appointmentFragment" />
+        <action
+            android:id="@+id/action_checkAppointmentFragment_to_apiUserFragment"
+            app:destination="@id/apiUserFragment" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>
